@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1652082276
+<< error_s >>
+rect 148 41 163 44
+rect 392 41 407 44
+<< locali >>
+rect -6 450 21 475
+rect 1 272 7 291
+rect 35 272 184 291
+rect 500 218 517 246
+rect -6 0 27 26
+<< viali >>
+rect 7 272 35 291
+rect 1 218 41 246
+rect 517 218 557 246
+<< metal1 >>
+rect -5 291 41 298
+rect -5 272 7 291
+rect 35 272 41 291
+rect -5 268 41 272
+rect -6 246 567 253
+rect -6 218 1 246
+rect 41 218 517 246
+rect 557 218 567 246
+rect -6 211 567 218
+use inv_W12  inv_W12_0 ~/Documents/Comparator_MPW6/mag/myinv_layout2
+timestamp 1651483715
+transform 1 0 312 0 1 36
+box -50 -36 194 439
+use inv_W12  inv_W12_1
+timestamp 1651483715
+transform 1 0 68 0 1 36
+box -50 -36 194 439
+<< labels >>
+rlabel metal1 -6 232 -6 232 7 outp
+rlabel locali -6 463 -6 463 7 VDD
+rlabel locali -6 14 -6 14 7 GND
+rlabel metal1 -5 283 -5 283 7 outn
+<< end >>

@@ -1,0 +1,35 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1651483715
+<< error_s >>
+rect 260 82 290 88
+rect 1366 82 1396 88
+<< nwell >>
+rect 416 492 1172 522
+<< locali >>
+rect 452 900 1140 950
+rect 628 796 662 900
+rect 820 802 854 900
+rect 480 436 1120 492
+rect 474 0 1144 52
+<< metal1 >>
+rect 718 962 956 1002
+rect 718 782 764 962
+rect 910 784 956 962
+use inv_W12  inv_W12_0 ~/Documents/Comparator_MPW6/mag/myinv_layout2
+timestamp 1651483715
+transform 1 0 1206 0 1 72
+box -100 -72 388 878
+use inv_W12  inv_W12_1
+timestamp 1651483715
+transform 1 0 100 0 1 72
+box -100 -72 388 878
+use sky130_fd_pr__pfet_01v8_5SVZDE  sky130_fd_pr__pfet_01v8_5SVZDE_0 ~/Documents/Comparator_MPW6/mag/latch
+timestamp 1646503715
+transform 1 0 789 0 1 712
+box -789 -196 805 222
+<< labels >>
+rlabel space 1602 26 1602 26 3 GND
+rlabel space 1602 936 1602 936 3 VDD
+<< end >>

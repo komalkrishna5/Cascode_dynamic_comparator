@@ -1,0 +1,47 @@
+timestamp 1651483715
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use sky130_fd_pr__pfet_01v8_5SVZDE sky130_fd_pr__pfet_01v8_5SVZDE_0 1 0 789 0 1 712
+use inv_W12 inv_W12_1 1 0 100 0 1 72
+use inv_W12 inv_W12_0 1 0 1206 0 1 72
+node "m1_718_782#" 2 233.662 718 782 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25988 1272 0 0 0 0 0 0 0 0 0 0
+node "li_474_0#" 157 328.247 474 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34840 1444 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_480_436#" 139 187.312 480 436 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35840 1392 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_452_900#" 236 423.573 452 900 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41268 1880 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_416_492#" 42840 68.04 416 492 nw 0 0 0 0 22680 1572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_480_436#" "w_416_492#" 131.2
+cap "li_452_900#" "li_480_436#" 7.31014
+cap "li_474_0#" "li_480_436#" 55
+cap "li_452_900#" "m1_718_782#" 104.31
+cap "inv_W12_1/GND" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" -1.77636e-15
+cap "inv_W12_1/Vin" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" 5.95932
+cap "inv_W12_1/Vout" "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" -4.51
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" 28.8966
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" 25.5595
+cap "inv_W12_1/Vout" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" 30.5689
+cap "inv_W12_1/Vout" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" 33.2933
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" 364.07
+cap "inv_W12_1/GND" "inv_W12_1/Vout" -1.89062
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 85.249
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" 114.896
+cap "inv_W12_0/pmos_2uf2_0/w_n319_n202#" "inv_W12_0/VDD" -36.3337
+merge "inv_W12_0/VSUBS" "inv_W12_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W12_1/VSUBS" "sky130_fd_pr__pfet_01v8_5SVZDE_0/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/VSUBS" "VSUBS"
+merge "inv_W12_0/VDD" "inv_W12_1/VDD" -446.547 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8344 -544 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W12_1/VDD" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_15_n100#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_15_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" "li_452_900#"
+merge "inv_W12_0/pmos_2uf2_0/w_n319_n202#" "inv_W12_1/pmos_2uf2_0/w_n319_n202#" -1121.52 0 0 0 0 -373840 -5100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W12_1/pmos_2uf2_0/w_n319_n202#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "w_416_492#"
+merge "inv_W12_0/GND" "inv_W12_1/GND" -54.1476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10608 -312 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W12_1/GND" "li_474_0#"
+merge "inv_W12_0/Vin" "inv_W12_1/Vout" -37.0656 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14448 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W12_1/Vout" "li_480_436#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_111_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" -149.677 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2668 -300 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "m1_718_782#"

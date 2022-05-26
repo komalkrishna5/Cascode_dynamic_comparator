@@ -1,0 +1,58 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1652089661
+<< nwell >>
+rect -16 838 1626 902
+rect -16 552 1178 838
+rect 1248 552 1626 838
+rect -16 492 1626 552
+<< poly >>
+rect 646 808 1060 844
+rect 646 528 1060 564
+rect 260 64 290 98
+rect 1366 66 1396 92
+<< locali >>
+rect 452 900 1140 950
+rect 596 746 630 900
+rect 788 746 822 900
+rect 980 746 1014 900
+rect 480 436 1120 492
+rect 302 244 336 348
+rect 1408 254 1442 376
+rect 474 0 1144 52
+<< viali >>
+rect 192 434 258 498
+rect 1504 438 1564 488
+<< metal1 >>
+rect 686 978 1116 1022
+rect 686 734 732 978
+rect 878 734 924 978
+rect 1070 734 1116 978
+rect 180 498 272 510
+rect 180 434 192 498
+rect 258 434 272 498
+rect 180 420 272 434
+rect 1486 488 1578 506
+rect 1486 438 1504 488
+rect 1564 438 1578 488
+rect 1486 420 1578 438
+rect 198 392 250 420
+rect 1504 392 1566 420
+rect 198 342 1566 392
+use inv_W12  inv_W12_0 ~/Documents/Comparator_MPW6/mag/myinv_layout2
+timestamp 1651483715
+transform 1 0 1206 0 1 72
+box -100 -72 388 878
+use inv_W12  inv_W12_1
+timestamp 1651483715
+transform 1 0 100 0 1 72
+box -100 -72 388 878
+use sky130_fd_pr__pfet_01v8_GJYUB2  sky130_fd_pr__pfet_01v8_GJYUB2_0
+timestamp 1652082874
+transform 1 0 853 0 1 690
+box -439 -200 467 162
+<< labels >>
+rlabel space 1602 26 1602 26 3 GND
+rlabel space 1602 936 1602 936 3 VDD
+<< end >>
