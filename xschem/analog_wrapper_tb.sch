@@ -193,7 +193,6 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 2030 -950 0 0 {name=l10 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 2130 -940 0 0 {name=l11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1490 -910 0 0 {name=l14 sig_type=std_logic lab=io_analog[10:0]}
-C {devices/lab_pin.sym} 3880 150 0 0 {name=l15 sig_type=std_logic lab=io_analog[5]}
 C {sky130_fd_pr/diode.sym} 4680 -310 0 0 {name=D9
 model=diode_pd2nw_05v5
 area=1e12

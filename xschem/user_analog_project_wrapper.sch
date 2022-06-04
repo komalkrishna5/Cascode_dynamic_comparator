@@ -50,25 +50,11 @@ N 4690 240 4690 250 {
 lab=#net2}
 N 4690 50 4690 120 {
 lab=#net1}
-N 3940 130 3940 170 {
-lab=io_analog[5]}
-N 3940 30 3940 70 {
-lab=vccd1}
-N 3940 230 3940 270 {
-lab=vssa1}
 N 3880 150 3940 150 {
 lab=io_analog[5]}
 N 3940 150 4000 150 {
 lab=io_analog[5]}
-N 4180 310 4180 350 {
-lab=io_analog[6]}
-N 4180 210 4180 250 {
-lab=vccd1}
-N 4180 410 4180 450 {
-lab=vssa1}
 N 4120 330 4180 330 {
-lab=io_analog[6]}
-N 4180 330 4240 330 {
 lab=io_analog[6]}
 N 4560 150 4590 150 {
 lab=io_analog[5]}
@@ -110,6 +96,7 @@ N 4770 -80 4810 -80 {
 lab=io_analog[1]}
 N 5070 -80 5120 -80 {
 lab=io_analog[0]}
+N 4180 330 4250 330 {}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -183,29 +170,7 @@ C {sky130_stdcells/buf_2.sym} 4560 350 0 0 {name=x6 VGND=vssa1 VNB=vssa1 VPB=vcc
 C {sky130_stdcells/buf_16.sym} 4710 350 0 0 {name=x7 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
 C {sky130_stdcells/buf_2.sym} 4490 50 0 0 {name=x8 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
 C {sky130_stdcells/buf_16.sym} 4650 50 0 0 {name=x9 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
-C {sky130_fd_pr/diode.sym} 3940 100 0 0 {name=D5
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 3940 200 0 0 {name=D6
-model=diode_pw2nd_05v5
-area=1e12
-}
-C {devices/lab_pin.sym} 3940 270 3 0 {name=l23 sig_type=std_logic lab=vssa1
-}
-C {devices/lab_pin.sym} 3940 30 2 0 {name=l24 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 3880 150 0 0 {name=l25 sig_type=std_logic lab=io_analog[5]}
-C {sky130_fd_pr/diode.sym} 4180 280 0 0 {name=D7
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4180 380 0 0 {name=D8
-model=diode_pw2nd_05v5
-area=1e12
-}
-C {devices/lab_pin.sym} 4180 450 3 0 {name=l26 sig_type=std_logic lab=vssa1
-}
-C {devices/lab_pin.sym} 4180 210 2 0 {name=l27 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 4120 330 0 0 {name=l28 sig_type=std_logic lab=io_analog[6]}
 C {sky130_stdcells/buf_2.sym} 4850 -80 0 0 {name=x10 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
 C {sky130_stdcells/buf_16.sym} 5030 -80 0 0 {name=x11 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}

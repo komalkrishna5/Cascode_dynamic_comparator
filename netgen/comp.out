@@ -54,7 +54,8 @@ A                                          |A
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_16 and sky130_fd_sc_hd__buf_16 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_3P6M5Y in circuit user_analog_project_wrapper (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_05v5_G4XDRY in circuit user_analog_project_wrapper (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_05v5_RT56W3 in circuit user_analog_project_wrapper (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_GT7G3L in circuit user_analog_project_wrapper (0)(1 instance)
 Flattening unmatched subcell comparator_v6 in circuit user_analog_project_wrapper (0)(1 instance)
 Flattening unmatched subcell latch_3 in circuit user_analog_project_wrapper (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GJYUB2 in circuit user_analog_project_wrapper (0)(1 instance)

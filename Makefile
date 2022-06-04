@@ -16,7 +16,7 @@
 PDK_ROOT?=/usr/local/share/pdk/sky130A
 INPUT_DIRECTORY?=/home/krishna/Comparator_MPW6
 CARAVEL_ROOT?=/home/krishna/Comparator_MPW6
-PRECHECK_ROOT?=/home/krishna/mpw_precheck
+PRECHECK_ROOT?=/home/krishna/mpw_precheckmpw6
 SIM ?= RTL
 
 # Install lite version of caravel, (1): caravel-lite, (0): caravel
@@ -101,7 +101,7 @@ openlane:
 # Default installs to the user home directory, override by "export PRECHECK_ROOT=<precheck-installation-path>"
 .PHONY: precheck
 precheck:
-	@git clone --depth=1 --branch mpw-5a https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
+	@git clone --depth=1 --branch mpw-6c https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
 	@docker pull efabless/mpw_precheck:latest
 
 .PHONY: run-precheck

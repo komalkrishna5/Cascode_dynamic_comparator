@@ -1,41 +1,41 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1651835070
+timestamp 1646431323
 << nmos >>
-rect -15 -500 15 -300
+rect -15 -100 15 100
 << ndiff >>
-rect -73 -338 -15 -300
-rect -73 -462 -61 -338
-rect -27 -462 -15 -338
-rect -73 -500 -15 -462
-rect 15 -338 73 -300
-rect 15 -462 27 -338
-rect 61 -462 73 -338
-rect 15 -500 73 -462
+rect -73 62 -15 100
+rect -73 -62 -61 62
+rect -27 -62 -15 62
+rect -73 -100 -15 -62
+rect 15 62 73 100
+rect 15 -62 27 62
+rect 61 -62 73 62
+rect 15 -100 73 -62
 << ndiffc >>
-rect -61 -462 -27 -338
-rect 27 -462 61 -338
+rect -61 -62 -27 62
+rect 27 -62 61 62
 << poly >>
-rect -15 -300 15 -274
-rect -15 -526 15 -500
+rect -15 100 15 126
+rect -15 -126 15 -100
 << locali >>
-rect -61 -338 -27 -322
-rect -61 -478 -27 -462
-rect 27 -338 61 -322
-rect 27 -478 61 -462
+rect -61 62 -27 78
+rect -61 -78 -27 -62
+rect 27 62 61 78
+rect 27 -78 61 -62
 << viali >>
-rect -61 -462 -27 -338
-rect 27 -462 61 -338
+rect -61 -62 -27 62
+rect 27 -62 61 62
 << metal1 >>
-rect -67 -338 -21 -326
-rect -67 -462 -61 -338
-rect -27 -462 -21 -338
-rect -67 -474 -21 -462
-rect 21 -338 67 -326
-rect 21 -462 27 -338
-rect 61 -462 67 -338
-rect 21 -474 67 -462
+rect -67 62 -21 74
+rect -67 -62 -61 62
+rect -27 -62 -21 62
+rect -67 -74 -21 -62
+rect 21 62 67 74
+rect 21 -62 27 62
+rect 61 -62 67 62
+rect 21 -74 67 -62
 << properties >>
 string gencell sky130_fd_pr__nfet_01v8
 string library sky130
