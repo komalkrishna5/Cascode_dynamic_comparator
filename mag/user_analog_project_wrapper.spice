@@ -62,10 +62,10 @@ X40 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1
 X41 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X42 a_109_47# A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
 X43 VGND a_109_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
-C0 VPWR VPB 2.24fF
-C1 X VGND 2.53fF
-C2 VPWR X 3.72fF
-C3 X a_109_47# 4.49fF
+C0 VPB VPWR 2.24fF
+C1 X VPWR 3.72fF
+C2 X a_109_47# 4.49fF
+C3 X VGND 2.53fF
 C4 VPB VNB 2.02fF
 .ends
 
@@ -231,8 +231,8 @@ C7 CLKBAR GND 3.04fF
 + gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
 + gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
 + gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
-+ io_analog[1] io_analog[2] io_analog[3] io_analog[6] io_analog[7] io_analog[8] io_analog[9]
-+ io_analog[4] io_analog[5] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
++ io_analog[1] io_analog[2] io_analog[3] io_analog[7] io_analog[8] io_analog[9] io_analog[4]
++ io_analog[5] io_analog[6] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
 + io_clamp_low[1] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
 + io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] io_in[2] io_in[3] io_in[4] io_in[5]
@@ -362,65 +362,67 @@ V0 io_clamp_high[1] vccd1 0.0
 V1 io_clamp_high[1] io_clamp_high[2] 0.0
 V2 io_clamp_low[1] io_clamp_low[2] 0.0
 V3 io_clamp_low[1] vssa1 0.0
-C0 io_analog[5] sky130_fd_sc_hd__buf_2_3/X 75.68fF
-C1 io_analog[6] m4_180902_677200# 104.05fF
-C2 io_analog[0] io_clamp_high[1] 115.74fF
-C3 m4_186716_584374# sky130_fd_sc_hd__buf_2_2/X 4.20fF
-C4 io_clamp_high[1] sky130_fd_sc_hd__buf_2_3/X 122.04fF
-C5 m4_170578_677212# io_clamp_high[1] 30.18fF
-C6 io_analog[6] m4_175894_702434# 48.42fF
-C7 m4_186716_584374# sky130_fd_sc_hd__buf_2_3/X 4.20fF
-C8 io_analog[6] comparator_v6_0/CLK 2.17fF
-C9 m4_165578_698240# io_analog[6] 125.98fF
-C10 io_analog[6] io_clamp_high[1] 111.81fF
-C11 sky130_fd_sc_hd__buf_2_1/X io_clamp_high[1] 66.21fF
-C12 io_analog[5] m4_204098_586508# 176.62fF
-C13 m4_170578_677212# io_analog[6] 53.59fF
-C14 io_analog[3] io_clamp_high[1] 34.41fF
-C15 m4_186716_584374# io_analog[6] 185.47fF
-C16 m4_204098_586508# sky130_fd_sc_hd__buf_2_3/X 4.77fF
-C17 sky130_fd_sc_hd__buf_2_0/X io_clamp_high[1] 66.26fF
-C18 io_analog[5] comparator_v6_0/CLKBAR 2.23fF
-C19 comparator_v6_0/Outn io_clamp_high[1] 9.36fF
-C20 io_analog[5] io_clamp_high[1] 155.94fF
-C21 io_analog[4] io_clamp_low[1] 25.05fF
-C22 vssa1 io_clamp_low[1] 14.37fF
-C23 vssd2 io_clamp_low[1] 13.04fF
-C24 vssd1 io_clamp_low[1] 13.62fF
-C25 vdda2 io_clamp_low[1] 13.04fF
-C26 vdda1 io_clamp_low[1] 26.08fF
-C27 vssa2 io_clamp_low[1] 13.04fF
-C28 vccd2 io_clamp_low[1] 13.04fF
-C29 io_analog[10] io_clamp_low[1] 6.83fF
-C30 io_clamp_high[0] io_clamp_low[1] 3.58fF
-C31 io_clamp_low[0] io_clamp_low[1] 3.58fF
-C32 io_analog[9] io_clamp_low[1] 6.83fF
-C33 m4_141154_541976# io_clamp_low[1] 136.63fF **FLOATING
-C34 m4_204098_586508# io_clamp_low[1] 29.23fF **FLOATING
-C35 m4_186716_584374# io_clamp_low[1] 28.89fF **FLOATING
-C36 m4_180902_677200# io_clamp_low[1] 18.04fF **FLOATING
-C37 m4_170578_677212# io_clamp_low[1] 32.74fF **FLOATING
-C38 m4_165578_698240# io_clamp_low[1] 4.28fF **FLOATING
-C39 io_analog[3] io_clamp_low[1] 26.57fF
-C40 io_clamp_high[1] io_clamp_low[1] 2790.04fF
-C41 comparator_v6_0/Outp io_clamp_low[1] 26.65fF
-C42 comparator_v6_0/Outn io_clamp_low[1] 19.92fF
-C43 comparator_v6_0/CLK io_clamp_low[1] 17.79fF
-C44 comparator_v6_0/fp io_clamp_low[1] 2.32fF
-C45 comparator_v6_0/fn io_clamp_low[1] 2.31fF
-C46 io_analog[5] io_clamp_low[1] 358.33fF
-C47 io_analog[6] io_clamp_low[1] 282.38fF
-C48 comparator_v6_0/Dp io_clamp_low[1] 3.53fF
-C49 comparator_v6_0/Dn io_clamp_low[1] 3.24fF
-C50 comparator_v6_0/CLKBAR io_clamp_low[1] 7.21fF
-C51 io_analog[1] io_clamp_low[1] 25.06fF
-C52 io_analog[0] io_clamp_low[1] 431.98fF
-C53 io_analog[7] io_clamp_low[1] 69.37fF
-C54 sky130_fd_sc_hd__buf_2_2/X io_clamp_low[1] 354.87fF
-C55 io_analog[8] io_clamp_low[1] 72.97fF
-C56 sky130_fd_sc_hd__buf_2_3/X io_clamp_low[1] 303.75fF
-C57 sky130_fd_sc_hd__buf_2_1/X io_clamp_low[1] 190.77fF
-C58 io_analog[2] io_clamp_low[1] 25.67fF
-C59 sky130_fd_sc_hd__buf_2_0/X io_clamp_low[1] 195.72fF
+C0 sky130_fd_sc_hd__buf_2_3/X io_analog[5] 75.68fF
+C1 m4_186716_584374# sky130_fd_sc_hd__buf_2_2/X 4.20fF
+C2 io_analog[6] m4_180902_677200# 104.05fF
+C3 m3_165578_698240# m4_165578_698240# 68.96fF
+C4 io_clamp_high[1] sky130_fd_sc_hd__buf_2_1/X 66.21fF
+C5 comparator_v6_0/CLKBAR io_analog[5] 2.23fF
+C6 io_analog[6] m4_170578_677212# 53.59fF
+C7 io_analog[6] m4_175894_702434# 47.96fF
+C8 io_clamp_high[1] m4_170578_677212# 30.18fF
+C9 m4_165578_698240# io_analog[6] 57.03fF
+C10 io_clamp_high[1] io_analog[3] 34.41fF
+C11 io_analog[0] io_clamp_high[1] 115.74fF
+C12 m4_186716_584374# io_analog[6] 185.47fF
+C13 sky130_fd_sc_hd__buf_2_0/X io_clamp_high[1] 66.26fF
+C14 io_analog[6] io_clamp_high[1] 111.51fF
+C15 io_clamp_high[1] comparator_v6_0/Outn 9.36fF
+C16 io_analog[6] comparator_v6_0/CLK 2.17fF
+C17 m4_186716_584374# sky130_fd_sc_hd__buf_2_3/X 4.20fF
+C18 io_clamp_high[1] sky130_fd_sc_hd__buf_2_3/X 122.04fF
+C19 m4_204098_586508# sky130_fd_sc_hd__buf_2_3/X 4.77fF
+C20 io_clamp_high[1] io_analog[5] 155.94fF
+C21 m4_204098_586508# io_analog[5] 176.62fF
+C22 io_analog[4] io_clamp_low[1] 25.05fF
+C23 vssa1 io_clamp_low[1] 14.37fF
+C24 vssd2 io_clamp_low[1] 13.04fF
+C25 vssd1 io_clamp_low[1] 13.62fF
+C26 vdda2 io_clamp_low[1] 13.04fF
+C27 vdda1 io_clamp_low[1] 26.08fF
+C28 vssa2 io_clamp_low[1] 13.04fF
+C29 vccd2 io_clamp_low[1] 13.04fF
+C30 io_analog[10] io_clamp_low[1] 6.83fF
+C31 io_clamp_high[0] io_clamp_low[1] 3.58fF
+C32 io_clamp_low[0] io_clamp_low[1] 3.58fF
+C33 io_analog[9] io_clamp_low[1] 6.83fF
+C34 m4_141154_541976# io_clamp_low[1] 136.63fF **FLOATING
+C35 m4_204098_586508# io_clamp_low[1] 29.23fF **FLOATING
+C36 m4_186716_584374# io_clamp_low[1] 28.89fF **FLOATING
+C37 m4_180902_677200# io_clamp_low[1] 18.04fF **FLOATING
+C38 m4_170578_677212# io_clamp_low[1] 32.74fF **FLOATING
+C39 m4_165578_698240# io_clamp_low[1] 4.28fF **FLOATING
+C40 m3_165578_698240# io_clamp_low[1] 16.00fF **FLOATING
+C41 io_analog[3] io_clamp_low[1] 26.57fF
+C42 io_clamp_high[1] io_clamp_low[1] 2793.62fF
+C43 comparator_v6_0/Outp io_clamp_low[1] 26.65fF
+C44 comparator_v6_0/Outn io_clamp_low[1] 19.92fF
+C45 comparator_v6_0/CLK io_clamp_low[1] 17.79fF
+C46 comparator_v6_0/fp io_clamp_low[1] 2.32fF
+C47 comparator_v6_0/fn io_clamp_low[1] 2.31fF
+C48 io_analog[5] io_clamp_low[1] 358.33fF
+C49 io_analog[6] io_clamp_low[1] 259.42fF
+C50 comparator_v6_0/Dp io_clamp_low[1] 3.53fF
+C51 comparator_v6_0/Dn io_clamp_low[1] 3.24fF
+C52 comparator_v6_0/CLKBAR io_clamp_low[1] 7.21fF
+C53 io_analog[1] io_clamp_low[1] 25.06fF
+C54 io_analog[0] io_clamp_low[1] 431.98fF
+C55 io_analog[7] io_clamp_low[1] 69.37fF
+C56 sky130_fd_sc_hd__buf_2_2/X io_clamp_low[1] 354.87fF
+C57 io_analog[8] io_clamp_low[1] 72.97fF
+C58 sky130_fd_sc_hd__buf_2_3/X io_clamp_low[1] 303.75fF
+C59 sky130_fd_sc_hd__buf_2_1/X io_clamp_low[1] 190.77fF
+C60 io_analog[2] io_clamp_low[1] 25.67fF
+C61 sky130_fd_sc_hd__buf_2_0/X io_clamp_low[1] 195.72fF
 .ends
 
