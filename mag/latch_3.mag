@@ -1,7 +1,14 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653304099
+timestamp 1654337383
+<< error_s >>
+rect -16 492 1626 902
+rect 548 490 1158 492
+rect 202 108 260 308
+rect 290 108 348 308
+rect 1308 108 1366 308
+rect 1396 108 1454 308
 << nwell >>
 rect -16 838 1626 902
 rect -16 552 1178 838
@@ -41,15 +48,15 @@ rect 198 392 250 420
 rect 1504 392 1566 420
 rect 198 342 1566 392
 use inv_W12  inv_W12_0 ~/Documents/Comparator_MPW6/mag/myinv_layout2
-timestamp 1653304099
+timestamp 1654337383
 transform 1 0 1206 0 1 72
 box -100 -72 388 878
 use inv_W12  inv_W12_1
-timestamp 1653304099
+timestamp 1654337383
 transform 1 0 100 0 1 72
 box -100 -72 388 878
 use sky130_fd_pr__pfet_01v8_GJYUB2  sky130_fd_pr__pfet_01v8_GJYUB2_0 ~/Documents/Comparator_MPW6/mag/latch
-timestamp 1652082874
+timestamp 1654337383
 transform 1 0 853 0 1 690
 box -439 -200 467 162
 << labels >>

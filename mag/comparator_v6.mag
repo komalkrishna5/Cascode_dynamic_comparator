@@ -1,6 +1,15 @@
 magic
 tech sky130A
-timestamp 1653472115
+timestamp 1654337383
+<< error_s >>
+rect 297 2301 326 2401
+rect 341 2301 370 2401
+rect 495 2302 524 2402
+rect 539 2302 568 2402
+rect 145 1373 174 1473
+rect 189 1373 218 1473
+rect 698 1373 727 1473
+rect 742 1373 771 1473
 << nwell >>
 rect 391 2526 470 2668
 rect -57 1756 74 1784
@@ -923,19 +932,19 @@ rect -731 -522 -677 -349
 rect -1296 -669 -677 -522
 rect -1296 -967 -675 -669
 use SR_latch  SR_latch_0 ~/mycomparator_copy1/layout/latch
-timestamp 1646810677
+timestamp 1654337383
 transform 1 0 197 0 1 2227
 box 0 0 436 474
 use latch_3  latch_3_0
-timestamp 1653304099
+timestamp 1654337383
 transform 1 0 44 0 1 1319
 box -8 0 813 511
 use preamp_part12  preamp_part12_0 ~/Documents/Comparator_MPW6/mag/preamp
-timestamp 1652163895
+timestamp 1654337383
 transform 1 0 356 0 1 -232
 box -360 -330 510 693
 use preamp_part22  preamp_part22_0 ~/Documents/Comparator_MPW6/mag/preamp
-timestamp 1652012215
+timestamp 1654337383
 transform 1 0 68 0 1 660
 box 39 151 658 544
 << labels >>
