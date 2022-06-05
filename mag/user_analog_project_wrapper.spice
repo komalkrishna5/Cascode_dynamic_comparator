@@ -49,10 +49,10 @@ X40 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1
 X41 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X42 a_109_47# A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
 X43 VGND a_109_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
-C0 a_109_47# X 4.49fF
-C1 X VGND 2.53fF
-C2 VPB VPWR 2.24fF
-C3 VPWR X 3.72fF
+C0 VPB VPWR 2.24fF
+C1 VGND X 2.53fF
+C2 VPWR X 3.72fF
+C3 a_109_47# X 4.49fF
 C4 VPB VNB 2.02fF
 .ends
 
@@ -356,17 +356,17 @@ V0 vssa1 io_clamp_low[1] 0.0
 V1 vssa1 io_clamp_low[2] 0.0
 V2 vccd1 io_clamp_high[2] 0.0
 V3 vccd1 io_clamp_high[1] 0.0
-C0 vccd1 io_analog[2] 35.31fF
-C1 vccd1 io_analog[5] 148.89fF
-C2 vccd1 comparator_v6_0/Outp 66.96fF
-C3 comparator_v6_0/CLK io_analog[6] 3.97fF
-C4 io_analog[5] comparator_v6_0/CLKBAR 82.86fF
-C5 vccd1 comparator_v6_0/Outn 67.22fF
-C6 vccd1 io_analog[7] 122.74fF
-C7 vccd1 io_analog[3] 35.17fF
-C8 comparator_v6_0/CLK vccd1 9.52fF
-C9 vccd1 io_analog[1] 66.55fF
-C10 vccd1 io_analog[6] 138.79fF
+C0 io_analog[6] vccd1 138.79fF
+C1 comparator_v6_0/CLKBAR io_analog[5] 82.86fF
+C2 io_analog[1] vccd1 66.55fF
+C3 io_analog[6] comparator_v6_0/CLK 3.97fF
+C4 io_analog[7] vccd1 122.74fF
+C5 comparator_v6_0/Outp vccd1 66.96fF
+C6 io_analog[2] vccd1 35.31fF
+C7 io_analog[3] vccd1 35.17fF
+C8 io_analog[5] vccd1 148.89fF
+C9 comparator_v6_0/Outn vccd1 67.22fF
+C10 comparator_v6_0/CLK vccd1 9.52fF
 C11 io_analog[4] vssa1 25.05fF
 C12 vssd2 vssa1 13.04fF
 C13 vssd1 vssa1 13.62fF
@@ -379,24 +379,24 @@ C19 io_clamp_high[0] vssa1 3.58fF
 C20 io_clamp_low[0] vssa1 3.58fF
 C21 io_analog[10] vssa1 6.83fF
 C22 io_analog[9] vssa1 6.98fF
-C23 vccd1 vssa1 2793.99fF
+C23 vccd1 vssa1 2794.89fF
 C24 comparator_v6_0/Outp vssa1 110.60fF
 C25 comparator_v6_0/Outn vssa1 103.95fF
 C26 comparator_v6_0/CLK vssa1 170.32fF
 C27 comparator_v6_0/fp vssa1 2.32fF
 C28 comparator_v6_0/fn vssa1 2.31fF
-C29 io_analog[5] vssa1 373.47fF
-C30 io_analog[6] vssa1 385.54fF
+C29 io_analog[5] vssa1 375.42fF
+C30 io_analog[6] vssa1 387.49fF
 C31 comparator_v6_0/Dp vssa1 3.53fF
 C32 comparator_v6_0/Dn vssa1 3.23fF
 C33 comparator_v6_0/CLKBAR vssa1 141.85fF
 C34 L2 vssa1 104.54fF
-C35 io_analog[2] vssa1 22.71fF
+C35 io_analog[2] vssa1 23.73fF
 C36 L1 vssa1 110.67fF
-C37 io_analog[3] vssa1 22.64fF
-C38 io_analog[7] vssa1 215.24fF
+C37 io_analog[3] vssa1 23.66fF
+C38 io_analog[7] vssa1 214.35fF
 C39 sky130_fd_sc_hd__buf_2_1/X vssa1 3.60fF
-C40 io_analog[8] vssa1 301.10fF
-C41 io_analog[1] vssa1 420.76fF
+C40 io_analog[8] vssa1 302.13fF
+C41 io_analog[1] vssa1 421.78fF
 .ends
 
