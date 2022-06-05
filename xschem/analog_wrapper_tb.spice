@@ -68,14 +68,6 @@ x1 net1 net2 GND net3 VDD net4 net5 net6 net17 net18 net19 net20 net21 net22[3] 
 + net14[0] net15[2] net15[1] net15[0] net29 net16[2] net16[1] net16[0] user_analog_project_wrapper
 C1 io_analog[3] GND 0.1p m=1
 C2 io_analog[2] GND 0.1p m=1
-D9 net32 net30 sky130_fd_pr__diode_pd2nw_05v5 area=1e12
-D10 net31 net32 sky130_fd_pr__diode_pw2nd_05v5 area=1e12
-D11 net30 vccd1 sky130_fd_pr__diode_pd2nw_05v5 area=1e12
-D12 vssa1 net31 sky130_fd_pr__diode_pw2nd_05v5 area=1e12
-D13 net34 net35 sky130_fd_pr__diode_pd2nw_05v5 area=1e12
-D14 net33 net34 sky130_fd_pr__diode_pw2nd_05v5 area=1e12
-D15 net35 vssa1 sky130_fd_pr__diode_pd2nw_05v5 area=1e12
-D16 vccd1 net33 sky130_fd_pr__diode_pw2nd_05v5 area=1e12
 **** begin user architecture code
 
 ** opencircuitdesign pdks install
@@ -243,7 +235,7 @@ x1 vccd1 vssa1 net2 net8 net9 io_analog[5] io_analog[6] net1 comparator
 D1 io_analog[8] vccd1 sky130_fd_pr__diode_pd2nw_05v5 pj=1.8e+06u area=2.025e+11p
 D2 vssa1 io_analog[8] sky130_fd_pr__diode_pw2nd_05v5 pj=1.8e+06u area=2.025e+11p
 D3 io_analog[7] vccd1 sky130_fd_pr__diode_pd2nw_05v5 pj=1.8e+06u area=2.025e+11p
-D4 vssa1 io_analog[7] sky130_fd_pr__diode_pw2nd_05v5 pj=4e+06u area=1e+12p
+D4 vssa1 io_analog[7] sky130_fd_pr__diode_pw2nd_05v5 pj=1.8e+06u area=2.025e+11p
 x2 net8 vssa1 vssa1 vccd1 vccd1 net4 sky130_fd_sc_hd__buf_2
 x3 net4 vssa1 vssa1 vccd1 vccd1 io_analog[3] sky130_fd_sc_hd__buf_16
 x4 net9 vssa1 vssa1 vccd1 vccd1 net5 sky130_fd_sc_hd__buf_2
@@ -252,12 +244,12 @@ x6 io_analog[7] vssa1 vssa1 vccd1 vccd1 net3 sky130_fd_sc_hd__buf_2
 x7 net3 vssa1 vssa1 vccd1 vccd1 net2 sky130_fd_sc_hd__buf_16
 x8 io_analog[8] vssa1 vssa1 vccd1 vccd1 net6 sky130_fd_sc_hd__buf_2
 x9 net6 vssa1 vssa1 vccd1 vccd1 net1 sky130_fd_sc_hd__buf_16
-x10 io_analog[1] vssa1 vssa1 vccd1 vccd1 net7 sky130_fd_sc_hd__buf_2
-x11 net7 vssa1 vssa1 vccd1 vccd1 io_analog[0] sky130_fd_sc_hd__buf_16
-V0 vccd1 io_clamp_high[1] 0.0
-V1 vccd1 io_clamp_high[2] 0.0
-V2 vssa1 io_clamp_low[2] 0.0
-V3 vssa1 io_clamp_low[1] 0.0
+x10 io_analog[8] vssa1 vssa1 vccd1 vccd1 net7 sky130_fd_sc_hd__buf_2
+x11 net7 vssa1 vssa1 vccd1 vccd1 io_analog[1] sky130_fd_sc_hd__buf_16
+V0 vssa1 io_clamp_low[1] 0.0
+V1 vssa1 io_clamp_low[2] 0.0
+V2 vccd1 io_clamp_high[2] 0.0
+V3 vccd1 io_clamp_high[1] 0.0
 .ends
 
 

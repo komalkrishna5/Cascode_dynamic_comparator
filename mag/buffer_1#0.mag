@@ -1,12 +1,13 @@
 magic
 tech sky130A
-timestamp 1653304099
-use inv_W1#0  inv_W1_0
-timestamp 1645263751
-transform 1 0 50 0 1 36
-box -50 -36 194 439
+magscale 1 2
+timestamp 1654411931
+use inv_W1#0  inv_W1_0 ~/mycomparator_copy1/layout/myinv_layout2
+timestamp 0
+transform 1 0 100 0 1 72
+box 0 0 1 1
 use inv_W2#0  inv_W2_0
-timestamp 1653304099
-transform 1 0 294 0 1 36
-box -60 -36 202 439
+timestamp 1647355571
+transform 1 0 588 0 1 72
+box -120 -72 404 878
 << end >>

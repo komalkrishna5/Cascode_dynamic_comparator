@@ -93,10 +93,11 @@ lab=#net6}
 N 4890 -80 4990 -80 {
 lab=#net7}
 N 4770 -80 4810 -80 {
-lab=io_analog[1]}
+lab=io_analog[8]}
 N 5070 -80 5120 -80 {
 lab=io_analog[0]}
-N 4180 330 4250 330 {}
+N 4180 330 4250 330 {
+lab=io_analog[6]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -174,5 +175,5 @@ C {devices/lab_pin.sym} 3880 150 0 0 {name=l25 sig_type=std_logic lab=io_analog[
 C {devices/lab_pin.sym} 4120 330 0 0 {name=l28 sig_type=std_logic lab=io_analog[6]}
 C {sky130_stdcells/buf_2.sym} 4850 -80 0 0 {name=x10 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
 C {sky130_stdcells/buf_16.sym} 5030 -80 0 0 {name=x11 VGND=vssa1 VNB=vssa1 VPB=vccd1 VPWR=vccd1 prefix=sky130_fd_sc_hd__}
-C {devices/lab_pin.sym} 4770 -80 0 0 {name=l5 sig_type=std_logic lab=io_analog[1]}
-C {devices/lab_pin.sym} 5120 -80 2 0 {name=l6 sig_type=std_logic lab=io_analog[0]}
+C {devices/lab_pin.sym} 4770 -80 0 0 {name=l5 sig_type=std_logic lab=io_analog[8]}
+C {devices/lab_pin.sym} 5120 -80 2 0 {name=l6 sig_type=std_logic lab=io_analog[1]}

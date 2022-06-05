@@ -1,20 +1,7 @@
 * SPICE3 file created from user_analog_project_wrapper.ext - technology: sky130A
 
-.subckt sky130_fd_pr__diode_pw2nd_05v5_3P6M5Y a_n100_n100# w_n238_n238#
-D0 w_n238_n238# a_n100_n100# sky130_fd_pr__diode_pw2nd_05v5 pj=4e+06u area=1e+12p
-.ends
-
 .subckt sky130_fd_pr__diode_pd2nw_05v5_RT56W3 w_n321_n321# a_n45_n45# w_n183_n183#
 D0 a_n45_n45# w_n183_n183# sky130_fd_pr__diode_pd2nw_05v5 pj=1.8e+06u area=2.025e+11p
-.ends
-
-.subckt sky130_fd_sc_hd__buf_2 A VGND VPWR X VNB VPB
-X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=5.63e+11p pd=5.18e+06u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
-X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X2 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=1.664e+11p ps=1.8e+06u w=640000u l=150000u
-X3 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=1.755e+11p pd=1.84e+06u as=3.6625e+11p ps=3.78e+06u w=650000u l=150000u
-X4 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
-X5 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.092e+11p ps=1.36e+06u w=420000u l=150000u
 .ends
 
 .subckt sky130_fd_sc_hd__buf_16 A VGND VPWR X VNB VPB
@@ -62,7 +49,20 @@ X40 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1
 X41 VPWR a_109_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X42 a_109_47# A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
 X43 VGND a_109_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+*C0 X VGND 2.53fF
+*C1 VPWR VPB 2.24fF
+*C2 VPWR X 3.72fF
+*C3 X a_109_47# 4.49fF
+*C4 VPB VNB 2.02fF
+.ends
 
+.subckt sky130_fd_sc_hd__buf_2 A VGND VPWR X VNB VPB
+X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=5.63e+11p pd=5.18e+06u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
+X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=1.664e+11p ps=1.8e+06u w=640000u l=150000u
+X3 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=1.755e+11p pd=1.84e+06u as=3.6625e+11p ps=3.78e+06u w=650000u l=150000u
+X4 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.092e+11p ps=1.36e+06u w=420000u l=150000u
 .ends
 
 .subckt sky130_fd_pr__diode_pw2nd_05v5_GT7G3L a_n45_n45# w_n183_n183#
@@ -213,6 +213,10 @@ Xpreamp_part22_0 VDD fp CLKBAR CLKBAR CLK CLK fn VDD VDD GND VDD preamp_part22
 
 .ends
 
+.subckt sky130_fd_pr__diode_pw2nd_05v5_GT7E3L a_n45_n45# w_n183_n183#
+D0 w_n183_n183# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 pj=1.8e+06u area=2.025e+11p
+.ends
+
 .subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
 + gpio_analog[12] gpio_analog[13] gpio_analog[14] gpio_analog[15] gpio_analog[16]
 + gpio_analog[17] gpio_analog[1] gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5]
@@ -319,32 +323,32 @@ Xpreamp_part22_0 VDD fp CLKBAR CLKBAR CLK CLK fn VDD VDD GND VDD preamp_part22
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-Xsky130_fd_pr__diode_pw2nd_05v5_3P6M5Y_0 io_analog[7] vssa1 sky130_fd_pr__diode_pw2nd_05v5_3P6M5Y
 Xsky130_fd_pr__diode_pd2nw_05v5_RT56W3_0 vssa1 io_analog[8] vccd1 sky130_fd_pr__diode_pd2nw_05v5_RT56W3
-Xsky130_fd_sc_hd__buf_2_0 comparator_v6_0/Outn vssa1 vccd1 L1 vssa1 vccd1 sky130_fd_sc_hd__buf_2
-Xsky130_fd_sc_hd__buf_16_0 L1 vssa1 vccd1 io_analog[3] vssa1 vccd1 sky130_fd_sc_hd__buf_16
 Xsky130_fd_pr__diode_pd2nw_05v5_RT56W3_1 vssa1 io_analog[7] vccd1 sky130_fd_pr__diode_pd2nw_05v5_RT56W3
-Xsky130_fd_pr__diode_pw2nd_05v5_GT7G3L_0 io_analog[8] vssa1 sky130_fd_pr__diode_pw2nd_05v5_GT7G3L
-Xsky130_fd_sc_hd__buf_16_1 L2 vssa1 vccd1 io_analog[2] vssa1 vccd1 sky130_fd_sc_hd__buf_16
-Xsky130_fd_sc_hd__buf_2_1 comparator_v6_0/Outp vssa1 vccd1 L2 vssa1 vccd1 sky130_fd_sc_hd__buf_2
-Xsky130_fd_sc_hd__buf_16_2 sky130_fd_sc_hd__buf_2_3/X vssa1 vccd1 comparator_v6_0/CLKBAR
+Xsky130_fd_sc_hd__buf_16_0 sky130_fd_sc_hd__buf_2_0/X vssa1 vccd1 comparator_v6_0/CLK
 + vssa1 vccd1 sky130_fd_sc_hd__buf_16
-Xsky130_fd_sc_hd__buf_2_2 io_analog[8] vssa1 vccd1 sky130_fd_sc_hd__buf_2_2/X vssa1
+Xsky130_fd_sc_hd__buf_2_0 io_analog[8] vssa1 vccd1 sky130_fd_sc_hd__buf_2_0/X vssa1
 + vccd1 sky130_fd_sc_hd__buf_2
-Xsky130_fd_sc_hd__buf_16_3 sky130_fd_sc_hd__buf_2_2/X vssa1 vccd1 comparator_v6_0/CLK
-+ vssa1 vccd1 sky130_fd_sc_hd__buf_16
-Xsky130_fd_sc_hd__buf_2_3 io_analog[7] vssa1 vccd1 sky130_fd_sc_hd__buf_2_3/X vssa1
-+ vccd1 sky130_fd_sc_hd__buf_2
-Xsky130_fd_sc_hd__buf_16_4 sky130_fd_sc_hd__buf_2_4/X vssa1 vccd1 io_analog[0] vssa1
+Xsky130_fd_pr__diode_pw2nd_05v5_GT7G3L_0 io_analog[7] vssa1 sky130_fd_pr__diode_pw2nd_05v5_GT7G3L
+Xsky130_fd_sc_hd__buf_16_1 sky130_fd_sc_hd__buf_2_1/X vssa1 vccd1 io_analog[1] vssa1
 + vccd1 sky130_fd_sc_hd__buf_16
-Xsky130_fd_sc_hd__buf_2_4 io_analog[1] vssa1 vccd1 sky130_fd_sc_hd__buf_2_4/X vssa1
+Xsky130_fd_sc_hd__buf_2_1 io_analog[8] vssa1 vccd1 sky130_fd_sc_hd__buf_2_1/X vssa1
 + vccd1 sky130_fd_sc_hd__buf_2
+Xsky130_fd_sc_hd__buf_16_2 sky130_fd_sc_hd__buf_2_2/X vssa1 vccd1 comparator_v6_0/CLKBAR
++ vssa1 vccd1 sky130_fd_sc_hd__buf_16
+Xsky130_fd_sc_hd__buf_2_2 io_analog[7] vssa1 vccd1 sky130_fd_sc_hd__buf_2_2/X vssa1
++ vccd1 sky130_fd_sc_hd__buf_2
+Xsky130_fd_sc_hd__buf_2_3 comparator_v6_0/Outn vssa1 vccd1 L1 vssa1 vccd1 sky130_fd_sc_hd__buf_2
+Xsky130_fd_sc_hd__buf_16_3 L1 vssa1 vccd1 io_analog[3] vssa1 vccd1 sky130_fd_sc_hd__buf_16
+Xsky130_fd_sc_hd__buf_16_4 L2 vssa1 vccd1 io_analog[2] vssa1 vccd1 sky130_fd_sc_hd__buf_16
+Xsky130_fd_sc_hd__buf_2_4 comparator_v6_0/Outp vssa1 vccd1 L2 vssa1 vccd1 sky130_fd_sc_hd__buf_2
 Xcomparator_v6_0 comparator_v6_0/Outn io_analog[5] io_analog[6] comparator_v6_0/CLK
 + vccd1 vssa1 comparator_v6_0/Outp comparator_v6_0/CLKBAR comparator_v6
-V0 vccd1 io_clamp_high[1] 0.0
-V1 vccd1 io_clamp_high[2] 0.0
-V2 vssa1 io_clamp_low[2] 0.0
-V3 vssa1 io_clamp_low[1] 0.0
+Xsky130_fd_pr__diode_pw2nd_05v5_GT7E3L_0 io_analog[8] vssa1 sky130_fd_pr__diode_pw2nd_05v5_GT7E3L
+V0 vssa1 io_clamp_low[1] 0.0
+V1 vssa1 io_clamp_low[2] 0.0
+V2 vccd1 io_clamp_high[2] 0.0
+V3 vccd1 io_clamp_high[1] 0.0
 
 .ends
 

@@ -106,26 +106,6 @@ N 2030 -1120 2030 -1050 {
 lab=io_analog[3]}
 N 2130 -1120 2130 -1050 {
 lab=io_analog[2]}
-N 4680 -450 4680 -430 {
-lab=vccd1}
-N 4680 -370 4680 -340 {
-lab=#net7}
-N 4680 -120 4680 -110 {
-lab=vssa1}
-N 4680 -200 4680 -180 {
-lab=#net8}
-N 4680 -280 4680 -260 {
-lab=#net9}
-N 4910 -420 4910 -410 {
-lab=vccd1}
-N 4910 -350 4910 -330 {
-lab=#net10}
-N 4910 -270 4910 -250 {
-lab=#net11}
-N 4910 -190 4910 -160 {
-lab=#net12}
-N 4910 -100 4910 -80 {
-lab=vssa1}
 C {devices/TT_models.sym} 950 -1180 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -193,41 +173,3 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 2030 -950 0 0 {name=l10 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 2130 -940 0 0 {name=l11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 1490 -910 0 0 {name=l14 sig_type=std_logic lab=io_analog[10:0]}
-C {sky130_fd_pr/diode.sym} 4680 -310 0 0 {name=D9
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4680 -230 0 0 {name=D10
-model=diode_pw2nd_05v5
-area=1e12
-}
-C {devices/lab_pin.sym} 4680 -110 3 0 {name=l31 sig_type=std_logic lab=vssa1
-}
-C {devices/lab_pin.sym} 4680 -450 2 0 {name=l32 sig_type=std_logic lab=vccd1}
-C {sky130_fd_pr/diode.sym} 4680 -400 0 0 {name=D11
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4680 -150 0 0 {name=D12
-model=diode_pw2nd_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4910 -220 2 0 {name=D13
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4910 -300 2 0 {name=D14
-model=diode_pw2nd_05v5
-area=1e12
-}
-C {devices/lab_pin.sym} 4910 -80 0 0 {name=l33 sig_type=std_logic lab=vssa1
-}
-C {devices/lab_pin.sym} 4910 -420 0 0 {name=l34 sig_type=std_logic lab=vccd1}
-C {sky130_fd_pr/diode.sym} 4910 -130 2 0 {name=D15
-model=diode_pd2nw_05v5
-area=1e12
-}
-C {sky130_fd_pr/diode.sym} 4910 -380 2 0 {name=D16
-model=diode_pw2nd_05v5
-area=1e12
-}

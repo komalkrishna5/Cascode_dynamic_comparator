@@ -1,4 +1,4 @@
-timestamp 1654337383
+timestamp 1654421061
 version 8.3
 tech sky130A
 style ngspice()
@@ -12,4 +12,4 @@ substrate "w_n321_n321#" 0 0 -321 -321 pw 278208 4032 0 0 0 0 0 0 0 0 72896 4288
 cap "a_n45_n45#" "li_n285_n285#" 51.2341
 cap "a_n45_n45#" "w_n183_n183#" 285.521
 cap "w_n183_n183#" "li_n285_n285#" 455.11
-device pdiode sky130_fd_pr__diode_pd2nw_05v5 -45 -45 -44 -44 a=8100 p=360 "w_n183_n183#" "a_n45_n45#" 132 0 "w_n183_n183#" 128 0
+device pdiode sky130_fd_pr__diode_pd2nw_05v5 -45 -45 -44 -44 a=8100 p=360 "w_n183_n183#" "a_n45_n45#" 132 0 "w_n183_n183#" 0 0
